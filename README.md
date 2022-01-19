@@ -45,6 +45,8 @@ target_metadata = metadata
 
 ### Step3: Set DB url
 
+Usually you would need to set the `sqlalchemy.url` in your alembic file. But in order to make this connection more dynamic, we set this value in `env.py` as follows.
+
 ```py
 # in migrations/env.py
 from .database import get_db_url
